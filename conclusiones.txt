@@ -1,0 +1,46 @@
+# Flujo de Compra en SauceDemo
+
+
+## Conclusiones del Ejercicio
+
+### Hallazgos: Flujo E2E exitoso sin errores en su flujo, no se detectaron errores que impidan realizar el flujo E2E
+
+1. **Automatización Exitosa del Flujo de Compra:**
+   - El flujo completo de compra en SauceDemo fue automatizado con éxito, cubriendo:
+     - Autenticación.
+     - Selección de productos.
+     - Proceso de pago.
+     - Confirmación de la compra.
+
+2. **Manejo Dinámico de Datos:**
+   - Los datos de prueba se leen desde un archivo JSON, permitiendo flexibilidad y fácil actualización de información para pruebas adicionales.
+
+3. **Integración de SerenityBDD con ScreenPlay:**
+   - Se utilizó SerenityBDD junto con el patrón ScreenPlay para garantizar un diseño modular, reutilizable y fácil de mantener.
+   - El uso de Gradle Wrapper asegura la portabilidad del proyecto sin depender de instalaciones locales.
+
+4. **Captura de Evidencia:**
+   - Las capturas de pantalla de cada paso del flujo de compra proporcionan evidencia detallada de la ejecución y son ideales para revisiones o auditorías.
+
+---
+
+## Acerca de los Reportes
+
+### Ubicación de los Reportes Generados:
+
+1. **Reporte Estándar de Gradle:**
+   - **Ubicación:** `build/reports/tests/test/index.html`
+   - **Detalles Incluidos:**
+     - Resultados por escenario.
+     - Duración de cada prueba.
+     - Detalles sobre errores o excepciones encontradas.
+     - Estado final (éxito o fallo).
+
+2. **Reporte SerenityBDD:**
+   - **Ubicación:** `target/site/serenity/`
+   - **Detalles Incluidos:**
+     - Capturas de pantalla de cada paso del flujo.
+---
+
+
+

@@ -1,0 +1,38 @@
+{
+  "compra-saucedemo": {
+    "tag": "@IA",
+    "fijos": {
+      "usuario": "standard_user",
+      "password": "secret_sauce",
+      "mensajeEsperado": "THANK YOU FOR YOUR ORDER"
+    },
+    "variables": {
+      "nombre": {
+        "descripcion": "Nombre de personaje de Dragon Ball (Z, GT o Super), en español y de maximo 15 caracteres.",
+        "comoObtenerlo": [
+          "https://es.dragon-ball-official.com/",
+          "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Dragon_Ball",
+          "https://es.wikipedia.org/wiki/Dragon_Ball",
+          "https://www.espinof.com/listas/dragon-ball-como-ver-orden-toda-saga-creada-akira-toriyama"
+        ],
+        "comoGenerarlo": "Busqueda abierta en Google: nombres de personajes de Dragon Ball."
+      },
+      "apellido": {
+        "descripcion": "Apellido latino, de maximo 15 caracteres.",
+        "comoObtenerlo": [
+          "https://www.wikihow.com/Latino-Last-Names",
+          "https://es.wikipedia.org/wiki/Anexo:Apellidos_m%C3%A1s_comunes_en_Espa%C3%B1a_e_Hispanoam%C3%A9rica"
+        ],
+        "comoGenerarlo": "Busqueda abierta en Google: lista de apellidos latinos."
+      },
+      "codigoPostal": {
+        "descripcion": "Codigo postal real de la provincia de Loja, Ecuador.",
+        "comoObtenerlo": [
+          "https://codigo-postal.co/ecuador/loja/parroquia-loja/",
+          "https://codigo-postal.co/ecuador/loja/loja/"
+        ],
+        "comoGenerarlo": "Busqueda abierta en Google: codigos postales de Loja - Ecuador."
+      }
+    }
+  }
+}

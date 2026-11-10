@@ -1,0 +1,85 @@
+{
+  "schema": "mcp-policy/v1",
+  "caso": "compra-saucedemo",
+  "salidaProps": {
+    "nombre": "dataia.nombre",
+    "apellido": "dataia.apellido",
+    "codigoPostal": "dataia.codigoPostal"
+  },
+  "validacion": {
+    "nombre": {
+      "maxLongitud": 15
+    },
+    "apellido": {
+      "maxLongitud": 15
+    },
+    "codigoPostal": {
+      "regex": "^11\\d{4}$"
+    }
+  },
+  "resolucion": {
+    "nombre": {
+      "minLongitud": 3,
+      "minFrecuencia": 2,
+      "fuentesPermitidas": [
+        "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Dragon_Ball"
+      ],
+      "regexToken": "\\b[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñüÜ'-]{1,}\\b",
+      "palabrasExcluidas": [
+        "Dragon",
+        "Ball",
+        "Super",
+        "Gt",
+        "Anime",
+        "Manga",
+        "Akira",
+        "Toriyama",
+        "Oficial",
+        "Wikipedia",
+        "Serie",
+        "Saga",
+        "Capitulo",
+        "Lista",
+        "Temporada",
+        "Temporadas",
+        "Personaje",
+        "Personajes",
+        "Espanol",
+        "Español"
+      ]
+    },
+    "apellido": {
+      "minLongitud": 3,
+      "minFrecuencia": 2,
+      "fuentesPermitidas": [
+        "https://es.wikipedia.org/wiki/Anexo:Apellidos_m%C3%A1s_comunes_en_Espa%C3%B1a_e_Hispanoam%C3%A9rica"
+      ],
+      "regexToken": "\\b[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñüÜ'-]{2,}\\b",
+      "palabrasExcluidas": [
+        "Latino",
+        "Latina",
+        "Latinos",
+        "Latinas",
+        "Anexo",
+        "Apellidos",
+        "Comunes",
+        "Espana",
+        "España",
+        "Hispanoamerica",
+        "Hispanoamérica",
+        "Wikipedia",
+        "Wikihow",
+        "Pais",
+        "País"
+      ]
+    }
+  },
+  "ejecucion": {
+    "gradleTask": "test",
+    "runner": "com.yoder.ejercicio1E2E.runner.EjecutarSerenityIA",
+    "tags": "@IA and @compraSaucesCatalogoIA"
+  },
+  "trazabilidad": {
+    "guardarArchivo": "target/catalog-ia/ultimo-resuelto.json"
+  }
+}
